@@ -1,6 +1,6 @@
 **Privacy Policy**
 
-Alexander Ryakhin built the My Dictionary + Quizzes app as a Free app. This SERVICE is provided by Alexander Ryakhin at no cost and is intended for use as is.
+Alexander Ryakhin built the My Dictionary (English) app as a Free app. This SERVICE is provided by Alexander Ryakhin at no cost and is intended for use as is.
 
 This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.
 
@@ -49,9 +49,9 @@ These Services do not address anyone under the age of 13. I do not knowingly col
 
 I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page.
 
-This policy is effective as of 2021-10-02
+This policy is effective as of 2024-01-28
 
 **Contact Us**
 
-If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at bonney977@gmail.com.
+If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at sellrak@icloud.com.
 
