@@ -3,11 +3,843 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alexander Ryakhin - Privacy Policies</title>
+    <title>Aleksandr Riakhin - Senior iOS Software Engineer</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #667eea;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #1a1a1a;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 8vw, 5rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero h2 {
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            font-weight: 300;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            opacity: 0.8;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeInUp 1s ease 0.4s both;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease 0.6s both;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: white;
+            color: #667eea;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: #667eea;
+            transform: translateY(-2px);
+        }
+
+        /* Sections */
+        .section {
+            padding: 5rem 0;
+            background: white;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .section:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-text h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #667eea;
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .skill-card h4 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        .project-image {
+            height: 200px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 16px;
+            object-fit: cover;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .app-icon:hover {
+            transform: scale(1.1);
+        }
+
+        .project-content {
+            padding: 2rem;
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+        }
+
+        .project-description {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tech-tag {
+            background: #f1f5f9;
+            color: #667eea;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .project-links a {
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .project-links .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .project-links .btn-secondary {
+            border: 2px solid #667eea;
+            color: #667eea;
+        }
+
+        /* Experience Section */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #667eea;
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 3rem;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content {
+            margin-left: 0;
+            margin-right: 50%;
+            padding-right: 2rem;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            margin-left: 50%;
+            margin-right: 0;
+            padding-left: 2rem;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            background: #667eea;
+            border-radius: 50%;
+            transform: translateX(-50%);
+            border: 4px solid white;
+            box-shadow: 0 0 0 4px #667eea;
+        }
+
+        .timeline-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-company {
+            font-weight: 500;
+            color: #1a1a1a;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-date {
+            color: #666;
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+        }
+
+        .timeline-description {
+            color: #555;
+        }
+
+        /* Contact Section */
+        .contact-content {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        /* Footer */
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-item:nth-child(odd) .timeline-content,
+            .timeline-item:nth-child(even) .timeline-content {
+                margin-left: 50px;
+                margin-right: 0;
+                padding-left: 2rem;
+                padding-right: 0;
+            }
+
+            .timeline-dot {
+                left: 20px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-links {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        /* Scroll animations */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
+        }
+
+        .scroll-reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
 </head>
 <body>
-    <h1>Alexander Ryakhin</h1>
-    <p><a href="https://alexryakhin.github.io/MyDictionary-English/">My Dictionary Privacy Policy</a></p>
-    <p><a href="https://alexryakhin.github.io/RepsCount/">RepsCount Privacy Policy</a></p>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">AR</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Aleksandr Riakhin</h1>
+                <h2>Senior iOS Software Engineer</h2>
+                <p>Transforming ideas into exceptional mobile experiences with Swift, SwiftUI, and modern iOS architecture. Currently in Mauritius, ready to relocate for exciting opportunities.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Passionate iOS developer with a track record of building impactful mobile applications</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text scroll-reveal">
+                    <h3>Who I Am</h3>
+                    <p>I'm a Senior iOS Software Engineer with over 4 years of experience, specializing in Swift, SwiftUI, and modern architectural patterns. I've successfully migrated legacy codebases from Objective-C to Swift and scaled apps to 5M+ downloads.</p>
+                    <p>My expertise includes MVVM, MVI, Dependency Injection with Coordinators, and I'm passionate about creating innovative, secure, and scalable mobile experiences that users love.</p>
+                    <h3>What I Do</h3>
+                    <p>I lead development teams, collaborate with product and design teams, and implement backend-driven UI solutions. I'm experienced with CI/CD, unit testing, and agile practices, having improved development speed by up to 60%.</p>
+                </div>
+                <div class="skills-grid scroll-reveal">
+                    <div class="skill-card">
+                        <h4><i class="fab fa-swift"></i> Swift & SwiftUI</h4>
+                        <p>Modern iOS development with declarative UI</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4><i class="fas fa-layer-group"></i> Architecture</h4>
+                        <p>MVVM, MVI, DI + Coordinators</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4><i class="fas fa-code-branch"></i> CI/CD</h4>
+                        <p>Automated testing and deployment</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4><i class="fas fa-users"></i> Team Leadership</h4>
+                        <p>Mentoring and project management</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Showcasing my latest iOS applications and innovations</p>
+            </div>
+            <div class="projects-grid">
+
+                <div class="project-card scroll-reveal">
+                    <div class="project-image">
+                        <img src="images/mydictionary-icon.png" alt="My Dictionary App Icon" class="app-icon">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">My Dictionary</h3>
+                        <p class="project-description">Multi-language dictionary app with quick search, quizzes, analytics, and offline capabilities. Features 2K+ downloads with an impressive 4.8★ rating on the App Store.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Swift</span>
+                            <span class="tech-tag">Core Data</span>
+                            <span class="tech-tag">iCloud</span>
+                            <span class="tech-tag">Offline</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://alexryakhin.github.io/MyDictionary-English/" class="btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card scroll-reveal">
+                    <div class="project-image">
+                        <img src="images/flippin-icon.png" alt="Flippin App Icon" class="app-icon">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Flippin</h3>
+                        <p class="project-description">Latest project to help people learn words and phrases with flashcards and quizzes. Supports TTS and multiple languages.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">SwiftUI</span>
+                            <span class="tech-tag">Combine</span>
+                            <span class="tech-tag">Modern iOS</span>
+                            <span class="tech-tag">Innovation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.flippin.app" class="btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card scroll-reveal">
+                    <div class="project-image">
+                        <img src="images/repscount-icon.png" alt="RepsCount App Icon" class="app-icon">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">RepsCount</h3>
+                        <p class="project-description">A fitness app for tracking workouts featuring muscle mapping, planning and Calendar integration. Achieved Top 10 Sports app status in Montenegro App Store.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">SwiftUI</span>
+                            <span class="tech-tag">HealthKit</span>
+                            <span class="tech-tag">Core Data</span>
+                            <span class="tech-tag">Fitness</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://alexryakhin.github.io/RepsCount/" class="btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card scroll-reveal">
+                    <div class="project-image">
+                        <img src="images/purebite-icon.png" alt="Pure Bite App Icon" class="app-icon">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Pure Bite</h3>
+                        <p class="project-description">Healthy recipes app built with Spoonacular API. Features recipe discovery, shopping lists, and offline capabilities.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">SwiftUI</span>
+                            <span class="tech-tag">Core Data</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Recipes</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://alexryakhin.github.io/PureBite/" class="btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-subtitle">My journey in iOS development and team leadership</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Senior iOS Software Engineer</h3>
+                        <div class="timeline-company">KODE | Mauritius</div>
+                        <div class="timeline-date">09.2023 - Present</div>
+                        <div class="timeline-description">
+                            <p><strong>Stock Trading App:</strong> Introduced SwiftUI into UIKit project, accelerating development by 60%. Built real-time trading dashboards with WebSockets and implemented TP/SL trading features.</p>
+                            <p><strong>Government Services App:</strong> Led backend-driven UI development with SwiftUI, created custom form constructor, and integrated MapKit & CoreLocation features.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">iOS Software Engineer</h3>
+                        <div class="timeline-company">KODE | Kaliningrad, Russia</div>
+                        <div class="timeline-date">02.2022 - 09.2023</div>
+                        <div class="timeline-description">
+                            <p><strong>MAPS.ME (5M+ downloads):</strong> Migrated major parts from Objective-C to Swift, redesigned Favorites and Routing screens, improved crash rate by 35%. Acted as interim iOS Team Lead for 6 months.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Junior iOS Software Engineer</h3>
+                        <div class="timeline-company">Trinity | Moscow, Russia</div>
+                        <div class="timeline-date">08.2021 - 02.2022</div>
+                        <div class="timeline-description">
+                            <p>Developed AR Navigation app prototype with SceneKit and CoreLocation. Built accessibility-focused educational apps for children with disabilities. Enhanced UX and payment flow for retail coffee company app.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Ready to discuss exciting opportunities or collaborate on innovative projects</p>
+            </div>
+            <div class="contact-content scroll-reveal">
+                <p>I'm currently based in Mauritius and willing to relocate for the right opportunity. Whether you're looking for a senior iOS developer to join your team or want to discuss potential collaborations, I'd love to hear from you.</p>
+                <div class="contact-links">
+                    <a href="mailto:bonney977@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        bonney977@gmail.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/xander1100001" class="contact-link">
+                        <i class="fab fa-linkedin"></i>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/xander1100001" class="contact-link">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Aleksandr Riakhin. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header background on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+                header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.boxShadow = 'none';
+            }
+        });
+
+        // Scroll reveal animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-reveal').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Parallax effect for hero section
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero');
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+
+        // Add loading animation
+        window.addEventListener('load', () => {
+            document.body.style.opacity = '1';
+        });
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', () => {
+            // Add any additional initialization here
+            console.log('Portfolio website loaded successfully!');
+        });
+    </script>
 </body>
 </html>
