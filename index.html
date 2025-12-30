@@ -19,7 +19,6 @@
     <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -29,11 +28,15 @@
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            line-height: 1.6;
-            color: #1a1a1a;
-            background: linear-gradient(135deg, #0088FF 0%, #764ba2 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.47059;
+            font-weight: 400;
+            letter-spacing: -0.022em;
+            color: #1d1d1f;
+            background: #ffffff;
             overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
         .container {
@@ -48,11 +51,13 @@
             top: 0;
             left: 0;
             right: 0;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
             z-index: 1000;
-            padding: 1rem 0;
-            transition: all 0.3s ease;
+            padding: 0.75rem 0;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
         }
 
         .nav {
@@ -62,9 +67,10 @@
         }
 
         .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #0088FF;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1d1d1f;
+            letter-spacing: -0.01em;
         }
 
         .nav-links {
@@ -75,9 +81,10 @@
 
         .nav-links a {
             text-decoration: none;
-            color: #1a1a1a;
-            font-weight: 500;
-            transition: color 0.3s ease;
+            color: #1d1d1f;
+            font-weight: 400;
+            font-size: 0.9375rem;
+            transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .nav-links a:hover {
@@ -91,49 +98,44 @@
             align-items: center;
             position: relative;
             overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(0, 136, 255, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
-            z-index: 1;
+            background: linear-gradient(180deg, #f5f5f7 0%, #ffffff 100%);
+            padding-top: 5rem;
         }
 
         .hero-content {
             position: relative;
             z-index: 2;
             text-align: center;
-            color: white;
+            color: #1d1d1f;
         }
 
         .hero h1 {
-            font-size: clamp(3rem, 8vw, 5rem);
-            font-weight: 700;
-            margin-bottom: 1rem;
-            animation: fadeInUp 1s ease;
+            font-size: clamp(3rem, 8vw, 5.5rem);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+            animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .hero h2 {
-            font-size: clamp(1.5rem, 4vw, 2.5rem);
-            font-weight: 300;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-            animation: fadeInUp 1s ease 0.2s both;
+            font-size: clamp(1.5rem, 4vw, 2.25rem);
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+            color: #86868b;
+            letter-spacing: -0.02em;
+            animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.1s both;
         }
 
         .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 3rem;
-            opacity: 0.8;
+            font-size: 1.1875rem;
+            margin-bottom: 2.5rem;
+            color: #1d1d1f;
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
-            animation: fadeInUp 1s ease 0.4s both;
+            line-height: 1.47059;
+            animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.2s both;
         }
 
         .cta-buttons {
@@ -145,50 +147,49 @@
         }
 
         .btn {
-            padding: 1rem 2rem;
+            padding: 0.75rem 1.75rem;
             border: none;
-            border-radius: 50px;
-            font-weight: 600;
+            border-radius: 22px;
+            font-weight: 400;
+            font-size: 0.9375rem;
             text-decoration: none;
-            transition: all 0.3s ease;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
             cursor: pointer;
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
+            letter-spacing: -0.01em;
         }
 
         .btn-primary {
-            background: white;
-            color: #0088FF;
+            background: #0088FF;
+            color: white;
         }
 
         .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            background: #0071d9;
+            transform: translateY(-1px);
         }
 
         .btn-secondary {
             background: transparent;
-            color: white;
-            border: 2px solid white;
+            color: #0088FF;
+            border: 1px solid #0088FF;
         }
 
         .btn-secondary:hover {
-            background: white;
-            color: #0088FF;
-            transform: translateY(-2px);
+            background: rgba(0, 136, 255, 0.1);
+            transform: translateY(-1px);
         }
 
         /* Sections */
         .section {
-            padding: 5rem 0;
-            background: white;
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
+            padding: 6rem 0;
+            background: #ffffff;
         }
 
         .section:nth-child(even) {
-            background: #f8fafc;
+            background: #f5f5f7;
         }
 
         .section-header {
@@ -197,17 +198,21 @@
         }
 
         .section-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: #1a1a1a;
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #1d1d1f;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
         }
 
         .section-subtitle {
-            font-size: 1.2rem;
-            color: #666;
+            font-size: 1.1875rem;
+            color: #86868b;
             max-width: 600px;
             margin: 0 auto;
+            font-weight: 400;
+            line-height: 1.47059;
         }
 
         /* About Section */
@@ -220,13 +225,17 @@
 
         .about-text h3 {
             font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: #0088FF;
+            margin-bottom: 0.75rem;
+            color: #1d1d1f;
+            font-weight: 600;
+            letter-spacing: -0.01em;
         }
 
         .about-text p {
-            margin-bottom: 1.5rem;
-            color: #555;
+            margin-bottom: 1.25rem;
+            color: #1d1d1f;
+            font-size: 1.0625rem;
+            line-height: 1.47059;
         }
 
         .skills-grid {
@@ -238,18 +247,23 @@
         .skill-card {
             background: white;
             padding: 1.5rem;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
+            border-radius: 18px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 0.5px solid rgba(0, 0, 0, 0.04);
         }
 
         .skill-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         }
 
         .skill-card h4 {
-            color: #0088FF;
+            color: #1d1d1f;
             margin-bottom: 0.5rem;
+            font-weight: 600;
+            font-size: 1.0625rem;
+            letter-spacing: -0.01em;
         }
 
         /* Projects Section */
@@ -261,38 +275,39 @@
 
         .project-card {
             background: white;
-            border-radius: 20px;
+            border-radius: 18px;
             overflow: hidden;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            border: 0.5px solid rgba(0, 0, 0, 0.04);
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .project-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
         }
 
         .project-image {
             height: 200px;
-            background: linear-gradient(135deg, #0088FF 0%, #764ba2 100%);
+            background: linear-gradient(180deg, #f5f5f7 0%, #ffffff 100%);
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
+            color: #1d1d1f;
             font-size: 3rem;
         }
 
         .app-icon {
             width: 80px;
             height: 80px;
-            border-radius: 16px;
+            border-radius: 18px;
             object-fit: cover;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .app-icon:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
 
         .project-content {
@@ -302,13 +317,16 @@
         .project-title {
             font-size: 1.5rem;
             font-weight: 600;
-            margin-bottom: 1rem;
-            color: #1a1a1a;
+            margin-bottom: 0.75rem;
+            color: #1d1d1f;
+            letter-spacing: -0.01em;
         }
 
         .project-description {
-            color: #666;
-            margin-bottom: 1.5rem;
+            color: #1d1d1f;
+            margin-bottom: 1.25rem;
+            font-size: 1.0625rem;
+            line-height: 1.47059;
         }
 
         .project-tech {
@@ -319,12 +337,13 @@
         }
 
         .tech-tag {
-            background: #f1f5f9;
-            color: #0088FF;
-            padding: 0.25rem 0.75rem;
-            border-radius: 20px;
-            font-size: 0.875rem;
-            font-weight: 500;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            padding: 0.375rem 0.875rem;
+            border-radius: 12px;
+            font-size: 0.8125rem;
+            font-weight: 400;
+            border: 0.5px solid rgba(0, 0, 0, 0.04);
         }
 
         .project-links {
@@ -333,11 +352,12 @@
         }
 
         .project-links a {
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
+            padding: 0.625rem 1.25rem;
+            border-radius: 20px;
             text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
+            font-weight: 400;
+            font-size: 0.9375rem;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .project-links .btn-primary {
@@ -345,9 +365,18 @@
             color: white;
         }
 
+        .project-links .btn-primary:hover {
+            background: #0071d9;
+        }
+
         .project-links .btn-secondary {
-            border: 2px solid #0088FF;
+            border: 1px solid #0088FF;
             color: #0088FF;
+            background: transparent;
+        }
+
+        .project-links .btn-secondary:hover {
+            background: rgba(0, 136, 255, 0.1);
         }
 
         /* Experience Section */
@@ -401,31 +430,36 @@
         .timeline-content {
             background: white;
             padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 18px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            border: 0.5px solid rgba(0, 0, 0, 0.04);
         }
 
         .timeline-title {
             font-size: 1.25rem;
             font-weight: 600;
-            color: #0088FF;
+            color: #1d1d1f;
             margin-bottom: 0.5rem;
+            letter-spacing: -0.01em;
         }
 
         .timeline-company {
-            font-weight: 500;
-            color: #1a1a1a;
+            font-weight: 400;
+            color: #1d1d1f;
             margin-bottom: 0.5rem;
+            font-size: 1.0625rem;
         }
 
         .timeline-date {
-            color: #666;
-            font-size: 0.875rem;
+            color: #86868b;
+            font-size: 0.9375rem;
             margin-bottom: 1rem;
         }
 
         .timeline-description {
-            color: #555;
+            color: #1d1d1f;
+            font-size: 1.0625rem;
+            line-height: 1.47059;
         }
 
         /* Contact Section */
@@ -447,32 +481,35 @@
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            padding: 1rem 2rem;
+            padding: 0.75rem 1.75rem;
             background: #0088FF;
             color: white;
             text-decoration: none;
-            border-radius: 50px;
-            transition: all 0.3s ease;
+            border-radius: 22px;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            font-size: 0.9375rem;
+            font-weight: 400;
         }
 
         .contact-link:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(0, 136, 255, 0.3);
+            background: #0071d9;
+            transform: translateY(-1px);
         }
 
         /* Footer */
         .footer {
-            background: #1a1a1a;
-            color: white;
+            background: #f5f5f7;
+            color: #86868b;
             text-align: center;
-            padding: 2rem 0;
+            padding: 2.5rem 0;
+            font-size: 0.875rem;
         }
 
         /* Animations */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
-                transform: translateY(30px);
+                transform: translateY(20px);
             }
             to {
                 opacity: 1;
@@ -532,8 +569,8 @@
         /* Scroll animations */
         .scroll-reveal {
             opacity: 0;
-            transform: translateY(50px);
-            transition: all 0.8s ease;
+            transform: translateY(30px);
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .scroll-reveal.revealed {
@@ -803,10 +840,10 @@
         window.addEventListener('scroll', () => {
             const header = document.querySelector('.header');
             if (window.scrollY > 100) {
-                header.style.background = 'rgba(255, 255, 255, 0.98)';
-                header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+                header.style.background = 'rgba(255, 255, 255, 0.85)';
+                header.style.boxShadow = '0 1px 4px rgba(0, 0, 0, 0.04)';
             } else {
-                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.background = 'rgba(255, 255, 255, 0.8)';
                 header.style.boxShadow = 'none';
             }
         });
@@ -829,14 +866,6 @@
             observer.observe(el);
         });
 
-        // Parallax effect for hero section
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const hero = document.querySelector('.hero');
-            if (hero) {
-                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-            }
-        });
 
         // Add loading animation
         window.addEventListener('load', () => {
