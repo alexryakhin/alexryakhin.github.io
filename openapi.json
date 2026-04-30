@@ -1,0 +1,14 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Aleksandr Riakhin — No Public API",
+    "version": "1.0.0",
+    "description": "This site does not expose a public HTTP API. This OpenAPI document exists only to make automated API discovery deterministic."
+  },
+  "servers": [
+    {
+      "url": "https://alexryakhin.github.io"
+    }
+  ],
+  "paths": {}
+}

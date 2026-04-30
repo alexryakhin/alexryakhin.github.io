@@ -4,16 +4,21 @@
       "anchor": "https://alexryakhin.github.io/",
       "link": [
         {
+          "rel": "service-desc",
+          "href": "https://alexryakhin.github.io/openapi.json",
+          "type": "application/vnd.oai.openapi+json"
+        },
+        {
           "rel": "service-doc",
+          "href": "https://alexryakhin.github.io/"
+        },
+        {
+          "rel": "status",
           "href": "https://alexryakhin.github.io/"
         },
         {
           "rel": "about",
           "href": "https://alexryakhin.github.io/resume.html"
-        },
-        {
-          "rel": "sitemap",
-          "href": "https://alexryakhin.github.io/sitemap.xml"
         }
       ]
     }

@@ -5,6 +5,10 @@ This site is the personal portfolio of Aleksandr Riakhin, a Senior iOS Software 
 ## Primary pages
 - Home (portfolio): https://alexryakhin.github.io/
 - Resume: https://alexryakhin.github.io/resume.html
+ 
+## Markdown mirrors (static fallback)
+- Home (Markdown): https://alexryakhin.github.io/index.md
+- Resume (Markdown): https://alexryakhin.github.io/resume.md
 
 ## Key topics
 - iOS development (Swift, SwiftUI, UIKit)

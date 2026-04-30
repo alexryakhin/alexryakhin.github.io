@@ -7,6 +7,7 @@
     <meta name="description" content="Senior iOS Software Engineer specializing in Swift, SwiftUI, and modern iOS architecture. Portfolio featuring shipped iOS & macOS apps, experience, and contact details.">
     <link rel="canonical" href="https://alexryakhin.github.io/">
     <meta name="theme-color" content="#0088FF">
+    <link rel="alternate" type="text/markdown" href="/index.md">
 
     <meta property="og:title" content="Aleksandr Riakhin - Senior iOS Software Engineer">
     <meta property="og:description" content="Senior iOS Software Engineer specializing in Swift, SwiftUI, and modern iOS architecture. Portfolio featuring shipped iOS & macOS apps, experience, and contact details.">
@@ -69,9 +70,6 @@
       gtag('config', 'G-V954FXFHZH');
     </script>
     <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
-    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -497,6 +495,74 @@
             }
             console.log('Portfolio website loaded successfully!');
         });
+
+        // WebMCP (optional): expose basic site actions to browser agents.
+        (async () => {
+            try {
+                if (!('modelContext' in navigator)) return;
+                if (typeof navigator.modelContext?.provideContext !== 'function') return;
+
+                await navigator.modelContext.provideContext({
+                    version: '1.0',
+                    tools: [
+                        {
+                            name: 'open_resume',
+                            description: 'Open the resume page.',
+                            inputSchema: { type: 'object', properties: {}, additionalProperties: false },
+                            execute: async () => {
+                                window.location.href = '/resume.html';
+                                return { ok: true };
+                            }
+                        },
+                        {
+                            name: 'contact_email',
+                            description: 'Open the default mail client to contact Aleksandr.',
+                            inputSchema: { type: 'object', properties: {}, additionalProperties: false },
+                            execute: async () => {
+                                window.location.href = 'mailto:bonney977@gmail.com';
+                                return { ok: true };
+                            }
+                        },
+                        {
+                            name: 'open_link',
+                            description: 'Open a known external profile link (GitHub or LinkedIn).',
+                            inputSchema: {
+                                type: 'object',
+                                properties: { destination: { type: 'string', enum: ['github', 'linkedin'] } },
+                                required: ['destination'],
+                                additionalProperties: false
+                            },
+                            execute: async ({ destination }) => {
+                                const urlByDestination = {
+                                    github: 'https://github.com/alexryakhin',
+                                    linkedin: 'https://www.linkedin.com/in/xander1100001'
+                                };
+                                window.open(urlByDestination[destination], '_blank', 'noopener,noreferrer');
+                                return { ok: true };
+                            }
+                        },
+                        {
+                            name: 'scroll_to_section',
+                            description: 'Scroll to a section on the page.',
+                            inputSchema: {
+                                type: 'object',
+                                properties: { section: { type: 'string', enum: ['about', 'projects', 'experience', 'contact'] } },
+                                required: ['section'],
+                                additionalProperties: false
+                            },
+                            execute: async ({ section }) => {
+                                const target = document.getElementById(section);
+                                if (!target) return { ok: false, error: 'Section not found' };
+                                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                return { ok: true };
+                            }
+                        }
+                    ]
+                });
+            } catch (_) {
+                // Ignore: WebMCP is optional and experimental.
+            }
+        })();
     </script>
 </body>
 </html>
