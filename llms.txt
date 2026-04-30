@@ -1,0 +1,17 @@
+# Aleksandr Riakhin — Senior iOS Software Engineer
+
+This site is the personal portfolio of Aleksandr Riakhin, a Senior iOS Software Engineer specializing in Swift, SwiftUI, and modern iOS architecture. It includes shipped apps, professional experience, and contact links.
+
+## Primary pages
+- Home (portfolio): https://alexryakhin.github.io/
+- Resume: https://alexryakhin.github.io/resume.html
+
+## Key topics
+- iOS development (Swift, SwiftUI, UIKit)
+- Architecture (MVVM, MVI, DI, Coordinators)
+- CI/CD, testing, and app performance
+
+## Contact
+- Email: mailto:bonney977@gmail.com
+- GitHub: https://github.com/alexryakhin
+- LinkedIn: https://www.linkedin.com/in/xander1100001

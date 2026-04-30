@@ -1,0 +1,21 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://alexryakhin.github.io/",
+      "link": [
+        {
+          "rel": "service-doc",
+          "href": "https://alexryakhin.github.io/"
+        },
+        {
+          "rel": "about",
+          "href": "https://alexryakhin.github.io/resume.html"
+        },
+        {
+          "rel": "sitemap",
+          "href": "https://alexryakhin.github.io/sitemap.xml"
+        }
+      ]
+    }
+  ]
+}

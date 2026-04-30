@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "name": "Aleksandr Riakhin — Portfolio",
+  "description": "Static personal portfolio and resume for Aleksandr Riakhin (Senior iOS Software Engineer).",
+  "homepage": "https://alexryakhin.github.io/",
+  "skills": [
+    {
+      "id": "portfolio",
+      "name": "Portfolio overview",
+      "type": "documentation",
+      "url": "https://alexryakhin.github.io/",
+      "topics": [
+        "iOS",
+        "Swift",
+        "SwiftUI",
+        "architecture",
+        "apps"
+      ]
+    },
+    {
+      "id": "resume",
+      "name": "Resume",
+      "type": "documentation",
+      "url": "https://alexryakhin.github.io/resume.html",
+      "topics": [
+        "experience",
+        "skills",
+        "projects"
+      ]
+    }
+  ]
+}
