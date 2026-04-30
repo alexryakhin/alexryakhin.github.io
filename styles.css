@@ -372,6 +372,16 @@ body {
     background: rgba(0, 136, 255, 0.1);
 }
 
+/* Projects subsection */
+.subsection-header {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.subsection-title {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
 /* Experience Section */
 .timeline {
     position: relative;
