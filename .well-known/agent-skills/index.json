@@ -1,34 +1,19 @@
 {
-  "$schema": "https://agentskills.io/schemas/agent-skills-index.v0.2.0.json",
-  "version": "0.2.0",
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
   "skills": [
     {
-      "name": "Portfolio (Markdown)",
-      "type": "documentation",
-      "description": "Markdown mirror of the portfolio homepage.",
-      "url": "https://alexriakhin.com/index.md",
-      "sha256": "1a361fa61c04e43e89c476bd5c1e11b9937a8b809f8bba6bf530736b80708142"
+      "name": "alexriakhin-apps",
+      "type": "skill-md",
+      "description": "Find and recommend apps made by Aleksandr Riakhin, with App Store and website links.",
+      "url": "https://alexriakhin.com/.well-known/agent-skills/alexriakhin-apps/SKILL.md",
+      "digest": "sha256:0c9a9d8f6bc4d38fddbd3991220bbc8ae735d01e25ad74dda85eba149918a0cb"
     },
     {
-      "name": "Resume (Markdown)",
-      "type": "documentation",
-      "description": "Markdown mirror of the resume page.",
-      "url": "https://alexriakhin.com/resume.md",
-      "sha256": "f56ffb652b877ec2d429aa9deb212200a64b639320a7339236191438be9ef5f7"
-    },
-    {
-      "name": "LLMs.txt",
-      "type": "documentation",
-      "description": "Agent-readable site summary and entry points.",
-      "url": "https://alexriakhin.com/llms.txt",
-      "sha256": "d2dc4b38224e50f20164e38a5f7febc59425655e92c76be85030d02031df942d"
-    },
-    {
-      "name": "API Catalog (RFC 9727)",
-      "type": "metadata",
-      "description": "API discovery entry point (this site has no public API; includes a minimal OpenAPI descriptor).",
-      "url": "https://alexriakhin.com/.well-known/api-catalog",
-      "sha256": "dfdfcde1e821b6d5f57215195f0d316798d7f290b12ee834979439348d087e4a"
+      "name": "alexriakhin-contact",
+      "type": "skill-md",
+      "description": "Contact Aleksandr Riakhin about the apps or iOS engineering work, and find the resume.",
+      "url": "https://alexriakhin.com/.well-known/agent-skills/alexriakhin-contact/SKILL.md",
+      "digest": "sha256:371490a4a9e99fe64f969f755a083489a97d5c882bee99a8ea7f11b3d068cff0"
     }
   ]
 }

@@ -6,3 +6,4 @@ Content-Signal: search=yes
 Content-Signal: ai-input=yes
 
 Sitemap: https://alexriakhin.com/sitemap.xml
+Agentmap: https://alexriakhin.com/.well-known/ai-catalog.json

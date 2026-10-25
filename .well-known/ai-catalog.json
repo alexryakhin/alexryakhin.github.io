@@ -1,0 +1,43 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Aleksandr Riakhin",
+    "identifier": "did:web:alexriakhin.com"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:alexriakhin.com:docs:apps",
+      "displayName": "Apps by Aleksandr Riakhin",
+      "type": "text/markdown",
+      "url": "https://alexriakhin.com/index.md",
+      "representativeQueries": [
+        "apps made by Aleksandr Riakhin",
+        "app to learn Argentine Spanish",
+        "personal dictionary app for iPhone",
+        "gym workout tracker for Apple Watch",
+        "intermittent fasting tracker app"
+      ]
+    },
+    {
+      "identifier": "urn:air:alexriakhin.com:docs:resume",
+      "displayName": "Aleksandr Riakhin resume",
+      "type": "text/markdown",
+      "url": "https://alexriakhin.com/resume.md",
+      "representativeQueries": [
+        "Aleksandr Riakhin iOS engineer experience",
+        "senior iOS developer resume Swift SwiftUI",
+        "how to contact Aleksandr Riakhin"
+      ]
+    },
+    {
+      "identifier": "urn:air:alexriakhin.com:skills:index",
+      "displayName": "Agent skills for alexriakhin.com",
+      "type": "application/json",
+      "url": "https://alexriakhin.com/.well-known/agent-skills/index.json",
+      "representativeQueries": [
+        "recommend an app by Aleksandr Riakhin",
+        "contact the developer of El Recreo"
+      ]
+    }
+  ]
+}
