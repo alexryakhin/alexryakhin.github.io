@@ -5,4 +5,4 @@ Content-Signal: ai-train=yes
 Content-Signal: search=yes
 Content-Signal: ai-input=yes
 
-Sitemap: https://alexryakhin.github.io/sitemap.xml
+Sitemap: https://alexriakhin.com/sitemap.xml

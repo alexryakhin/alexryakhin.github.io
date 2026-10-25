@@ -6,28 +6,28 @@
       "name": "Portfolio (Markdown)",
       "type": "documentation",
       "description": "Markdown mirror of the portfolio homepage.",
-      "url": "https://alexryakhin.github.io/index.md",
+      "url": "https://alexriakhin.com/index.md",
       "sha256": "1a361fa61c04e43e89c476bd5c1e11b9937a8b809f8bba6bf530736b80708142"
     },
     {
       "name": "Resume (Markdown)",
       "type": "documentation",
       "description": "Markdown mirror of the resume page.",
-      "url": "https://alexryakhin.github.io/resume.md",
+      "url": "https://alexriakhin.com/resume.md",
       "sha256": "f56ffb652b877ec2d429aa9deb212200a64b639320a7339236191438be9ef5f7"
     },
     {
       "name": "LLMs.txt",
       "type": "documentation",
       "description": "Agent-readable site summary and entry points.",
-      "url": "https://alexryakhin.github.io/llms.txt",
+      "url": "https://alexriakhin.com/llms.txt",
       "sha256": "d2dc4b38224e50f20164e38a5f7febc59425655e92c76be85030d02031df942d"
     },
     {
       "name": "API Catalog (RFC 9727)",
       "type": "metadata",
       "description": "API discovery entry point (this site has no public API; includes a minimal OpenAPI descriptor).",
-      "url": "https://alexryakhin.github.io/.well-known/api-catalog",
+      "url": "https://alexriakhin.com/.well-known/api-catalog",
       "sha256": "dfdfcde1e821b6d5f57215195f0d316798d7f290b12ee834979439348d087e4a"
     }
   ]

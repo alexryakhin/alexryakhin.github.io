@@ -3,8 +3,8 @@
 Senior iOS Software Engineer specializing in Swift, SwiftUI, and modern iOS architecture.
 
 ## Links
-- Resume (HTML): https://alexryakhin.github.io/resume.html
-- Home: https://alexryakhin.github.io/
+- Resume (HTML): https://alexriakhin.com/resume.html
+- Home: https://alexriakhin.com/
 
 ## Contact
 - Email: bonney977@gmail.com

@@ -1,14 +1,14 @@
 # Aleksandr Riakhin — Senior iOS Software Engineer
 
-This site is the personal portfolio of Aleksandr Riakhin, a Senior iOS Software Engineer specializing in Swift, SwiftUI, and modern iOS architecture. It includes shipped apps, professional experience, and contact links.
+This site is the personal portfolio of Aleksandr Riakhin, a Senior iOS Software Engineer specializing in Swift, SwiftUI, and modern iOS architecture. It showcases Aleksandr's own apps (El Recreo, My Dictionary, Flippin, Replex, PureBite, Guaraní Converter, Price Wizard), professional experience, and contact links. See /index.md for app descriptions and App Store links.
 
 ## Primary pages
-- Home (portfolio): https://alexryakhin.github.io/
-- Resume: https://alexryakhin.github.io/resume.html
+- Home (portfolio): https://alexriakhin.com/
+- Resume: https://alexriakhin.com/resume.html
  
 ## Markdown mirrors (static fallback)
-- Home (Markdown): https://alexryakhin.github.io/index.md
-- Resume (Markdown): https://alexryakhin.github.io/resume.md
+- Home (Markdown): https://alexriakhin.com/index.md
+- Resume (Markdown): https://alexriakhin.com/resume.md
 
 ## Key topics
 - iOS development (Swift, SwiftUI, UIKit)

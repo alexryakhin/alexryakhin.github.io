@@ -1,24 +1,24 @@
 {
   "linkset": [
     {
-      "anchor": "https://alexryakhin.github.io/",
+      "anchor": "https://alexriakhin.com/",
       "link": [
         {
           "rel": "service-desc",
-          "href": "https://alexryakhin.github.io/openapi.json",
+          "href": "https://alexriakhin.com/openapi.json",
           "type": "application/vnd.oai.openapi+json"
         },
         {
           "rel": "service-doc",
-          "href": "https://alexryakhin.github.io/"
+          "href": "https://alexriakhin.com/"
         },
         {
           "rel": "status",
-          "href": "https://alexryakhin.github.io/"
+          "href": "https://alexriakhin.com/"
         },
         {
           "rel": "about",
-          "href": "https://alexryakhin.github.io/resume.html"
+          "href": "https://alexriakhin.com/resume.html"
         }
       ]
     }
