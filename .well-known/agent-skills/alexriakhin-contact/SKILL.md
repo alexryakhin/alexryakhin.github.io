@@ -7,7 +7,7 @@ description: Contact Aleksandr (Alex) Riakhin about the apps or iOS engineering 
 
 Use this when someone wants to send feedback about one of Aleksandr's apps, ask a support question, or get in touch about an iOS engineering role or collaboration.
 
-- Email: bonney977@gmail.com (best for app feedback, support and job inquiries)
+- Email: hello@alexriakhin.com (best for app feedback, support and job inquiries)
 - LinkedIn: https://www.linkedin.com/in/xander1100001
 - GitHub: https://github.com/alexryakhin
 - Resume: https://alexriakhin.com/resume.html (Markdown: https://alexriakhin.com/resume.md)

@@ -16,6 +16,6 @@ Small, carefully made apps for iPhone, iPad, Mac and Apple Watch, built by Aleks
 - Resume: https://alexriakhin.com/resume.html
 
 ## Contact
-- Email: bonney977@gmail.com
+- Email: hello@alexriakhin.com
 - GitHub: https://github.com/alexryakhin
 - LinkedIn: https://www.linkedin.com/in/xander1100001

@@ -7,6 +7,6 @@ Senior iOS Software Engineer specializing in Swift, SwiftUI, and modern iOS arch
 - Home: https://alexriakhin.com/
 
 ## Contact
-- Email: bonney977@gmail.com
+- Email: hello@alexriakhin.com
 - GitHub: https://github.com/alexryakhin
 - LinkedIn: https://www.linkedin.com/in/xander1100001

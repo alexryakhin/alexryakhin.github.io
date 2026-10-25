@@ -16,6 +16,6 @@ This site is the personal portfolio of Aleksandr Riakhin, a Senior iOS Software 
 - CI/CD, testing, and app performance
 
 ## Contact
-- Email: mailto:bonney977@gmail.com
+- Email: mailto:hello@alexriakhin.com
 - GitHub: https://github.com/alexryakhin
 - LinkedIn: https://www.linkedin.com/in/xander1100001
