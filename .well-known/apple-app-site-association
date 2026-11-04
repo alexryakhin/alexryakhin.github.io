@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["69S862NXBP.com.dor.My-Dictionary"],
+        "components": [
+          { "/": "/MyDictionary/pack", "comment": "External vocabulary pack import" },
+          { "/": "/MyDictionary/pack/*", "comment": "External vocabulary pack import paths" }
+        ]
+      }
+    ]
+  }
+}
