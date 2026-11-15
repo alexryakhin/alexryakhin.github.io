@@ -31,6 +31,22 @@ LANGUAGES = {
     "uk": ("Українська", "uk_UA", "ltr"),
 }
 
+# App websites with their own language versions; anything else links to English.
+APP_SITES = {
+    "elrecreo": ("https://alexriakhin.com/ElRecreo/", {"de", "fr", "pt-BR", "ru"}),
+    "mydictionary": ("https://alexriakhin.com/MyDictionary/", {"ar", "de", "es", "fr", "hr", "ja", "ko", "ru", "uk"}),
+    "flippin": ("https://www.flippin.app/", {"ar", "de", "es", "fr", "hr", "ja", "ko", "pt-BR", "ru", "uk"}),
+    "replex": ("https://alexriakhin.com/Replex/", {"ar", "de", "es", "fr", "ja", "ko", "pt-BR", "ru", "uk"}),
+}
+
+
+def app_urls(lang):
+    return {
+        f"url_{app}": base + (f"{lang.lower()}/" if lang in langs else "")
+        for app, (base, langs) in APP_SITES.items()
+    }
+
+
 GLOBE = (
     '<svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">'
     '<circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" stroke-width="1.8"/>'
@@ -86,6 +102,8 @@ def main():
             page_url=SITE + path_for(code),
             hreflang_links=hreflang_links(),
             lang_menu=lang_menu(code, strings["lang_label"]),
+            play_hl=code.replace("-", "_"),
+            **app_urls(code),
             meta_title_json=json.dumps(strings["meta_title"], ensure_ascii=False)[1:-1],
         )
         page = re.sub(r"\{\{(\w+)\}\}", lambda m: values[m.group(1)], template)
