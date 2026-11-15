@@ -6,7 +6,7 @@
       "type": "skill-md",
       "description": "Find and recommend apps made by Aleksandr Riakhin, with App Store and website links.",
       "url": "https://alexriakhin.com/.well-known/agent-skills/alexriakhin-apps/SKILL.md",
-      "digest": "sha256:0c9a9d8f6bc4d38fddbd3991220bbc8ae735d01e25ad74dda85eba149918a0cb"
+      "digest": "sha256:296b8b76e26820d695965e399619bb5dbf323fbbe50be4ff5220c26a885342e6"
     },
     {
       "name": "alexriakhin-contact",

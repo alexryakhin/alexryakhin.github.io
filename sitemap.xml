@@ -1,7 +1,158 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://alexriakhin.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexriakhin.com/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://alexriakhin.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://alexriakhin.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexriakhin.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alexriakhin.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://alexriakhin.com/hr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://alexriakhin.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://alexriakhin.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://alexriakhin.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alexriakhin.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://alexriakhin.com/uk/"/>
+  </url>
+  <url>
+    <loc>https://alexriakhin.com/ar/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexriakhin.com/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://alexriakhin.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://alexriakhin.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexriakhin.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alexriakhin.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://alexriakhin.com/hr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://alexriakhin.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://alexriakhin.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://alexriakhin.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alexriakhin.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://alexriakhin.com/uk/"/>
+  </url>
+  <url>
+    <loc>https://alexriakhin.com/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexriakhin.com/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://alexriakhin.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://alexriakhin.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexriakhin.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alexriakhin.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://alexriakhin.com/hr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://alexriakhin.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://alexriakhin.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://alexriakhin.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alexriakhin.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://alexriakhin.com/uk/"/>
+  </url>
+  <url>
+    <loc>https://alexriakhin.com/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexriakhin.com/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://alexriakhin.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://alexriakhin.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexriakhin.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alexriakhin.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://alexriakhin.com/hr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://alexriakhin.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://alexriakhin.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://alexriakhin.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alexriakhin.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://alexriakhin.com/uk/"/>
+  </url>
+  <url>
+    <loc>https://alexriakhin.com/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexriakhin.com/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://alexriakhin.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://alexriakhin.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexriakhin.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alexriakhin.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://alexriakhin.com/hr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://alexriakhin.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://alexriakhin.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://alexriakhin.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alexriakhin.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://alexriakhin.com/uk/"/>
+  </url>
+  <url>
+    <loc>https://alexriakhin.com/hr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexriakhin.com/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://alexriakhin.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://alexriakhin.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexriakhin.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alexriakhin.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://alexriakhin.com/hr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://alexriakhin.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://alexriakhin.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://alexriakhin.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alexriakhin.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://alexriakhin.com/uk/"/>
+  </url>
+  <url>
+    <loc>https://alexriakhin.com/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexriakhin.com/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://alexriakhin.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://alexriakhin.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexriakhin.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alexriakhin.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://alexriakhin.com/hr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://alexriakhin.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://alexriakhin.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://alexriakhin.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alexriakhin.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://alexriakhin.com/uk/"/>
+  </url>
+  <url>
+    <loc>https://alexriakhin.com/ko/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexriakhin.com/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://alexriakhin.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://alexriakhin.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexriakhin.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alexriakhin.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://alexriakhin.com/hr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://alexriakhin.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://alexriakhin.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://alexriakhin.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alexriakhin.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://alexriakhin.com/uk/"/>
+  </url>
+  <url>
+    <loc>https://alexriakhin.com/pt-br/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexriakhin.com/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://alexriakhin.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://alexriakhin.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexriakhin.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alexriakhin.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://alexriakhin.com/hr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://alexriakhin.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://alexriakhin.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://alexriakhin.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alexriakhin.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://alexriakhin.com/uk/"/>
+  </url>
+  <url>
+    <loc>https://alexriakhin.com/ru/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexriakhin.com/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://alexriakhin.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://alexriakhin.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexriakhin.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alexriakhin.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://alexriakhin.com/hr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://alexriakhin.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://alexriakhin.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://alexriakhin.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alexriakhin.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://alexriakhin.com/uk/"/>
+  </url>
+  <url>
+    <loc>https://alexriakhin.com/uk/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alexriakhin.com/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://alexriakhin.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://alexriakhin.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://alexriakhin.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://alexriakhin.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://alexriakhin.com/hr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://alexriakhin.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://alexriakhin.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://alexriakhin.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://alexriakhin.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://alexriakhin.com/uk/"/>
   </url>
   <url>
     <loc>https://alexriakhin.com/resume.html</loc>

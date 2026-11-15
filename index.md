@@ -4,7 +4,7 @@ Small, carefully made apps for iPhone, iPad, Mac and Apple Watch, built by Aleks
 
 ## Apps
 - **El Recreo: Learn Spanish** — learn Argentine (Rioplatense) Spanish through a story set in Buenos Aires. https://apps.apple.com/app/id6761676545 · https://alexriakhin.com/ElRecreo/
-- **My Dictionary** — your own dictionary in 180+ languages, with definitions, examples, pictures, spaced review and word games. https://apps.apple.com/app/id1588418793 · https://mydictionary.org
+- **My Dictionary** — your own dictionary in 180+ languages, with definitions, examples, pictures, spaced review and word games. https://apps.apple.com/app/id1588418793 · https://alexriakhin.com/MyDictionary/
 - **Flippin** — flashcards you can hear and speak, in 30+ languages. https://apps.apple.com/app/id6748499528 · https://www.flippin.app
 - **Replex** — strength training log for iPhone and Apple Watch, with plans and an AI coach. https://apps.apple.com/app/id6476805884 · https://alexriakhin.com/Replex/
 - **PureBite** — intermittent fasting tracker with Lock Screen timer, Ramadan mode and recipes. https://apps.apple.com/app/id6505026086 · https://alexriakhin.com/PureBite/
